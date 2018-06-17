@@ -101,7 +101,6 @@ class Actor(torch.nn.Module):
     def __init__(self, state_size, action_size, action_low, action_high, h_units_1=64, h_units_2=64, weights_init=3e-3):
         super(Actor, self).__init__()
         """Initialize parameters and build model.
-
         Params
         ======
             state_size (int): Dimension of each state
@@ -146,7 +145,6 @@ class Critic(torch.nn.Module):
     def __init__(self, state_size, action_size, h_units_1=64, h_units_2=64, weights_init=3e-3):
         super(Critic, self).__init__()
         """Initialize parameters and build model.
-
         Params
         ======
             state_size (int): Dimension of each state
